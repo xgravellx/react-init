@@ -1,26 +1,23 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
+    "jsx": "react",
+    "baseUrl": "./src",
+    "paths": {
+      "assets": ["assets/*"],
+      "auth": ["auth/*"],
+      "components": ["components/*"],
+      "configs": ["configs/*"],
+      "constants": ["constants/*"],
+      "translations": ["translations/*"],
+      "layouts": ["layouts/*"],
+      "pages": ["pages/*"],
+      "redux": ["redux/*"],
+      "routes": ["routes/*"],
+      "services": ["services/*"],
+      "helpers": ["helpers/*"]
+    },
     "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx"
+    "resolveJsonModule": true
   },
-  "include": [
-    "src"
-  ]
+  "exclude": ["node_modules"]
 }
